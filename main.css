@@ -1,0 +1,28 @@
+figure.overlay {
+position: absolute;
+width: 70%;
+z-index: 1;
+}
+.main{
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+figure.overlay img {width: 100%;}
+
+figure.overlay figcaption {
+position: absolute;
+z-index: 1000;
+width: 80%;
+top: 0;
+/**optional background overlay**/
+background: rgba(255,255,255,0.2);
+/**text, adjust all values as desired**/
+padding: 15%;
+font-weight: 700;
+color: black;
+/**some fallback value**/
+font-size: 14px;
+/**responsive size is roughly 3.4%  of the device's viewport width**/
+font-size: 2.0vw;
+}
