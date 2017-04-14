@@ -1,11 +1,11 @@
 figure.overlay {
 position: absolute;
-width: 70%;
+width: 60%;
 z-index: 1;
 }
 .main{
 
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-right: 10vw;
 }
 figure.overlay img {width: 100%;}
