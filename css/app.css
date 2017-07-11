@@ -1,0 +1,42 @@
+
+.dir_rtl {
+  direction: rtl;
+}
+
+.container {
+  background: gainsboro;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+  height: 90%;
+}
+
+.bb-custom-wrapper > nav {
+  bottom: 100px;
+}
+
+.lesson-list {
+  height: 10%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.lesson-list-inner {
+  width: 200%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.lesson-list .lesson {
+  width: auto;
+  float: left;
+  text-align: center;
+  padding: 10px 20px;
+  border-right: 1px solid #ccc;
+  margin-top: 20px;
+  background: #50a575;
+  color: #fff;
+  margin: 20px 5px 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
