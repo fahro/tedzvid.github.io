@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js demo-4">
+<html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,7 +8,6 @@
 		<meta name="description" content="Tedzvid" />
 		<meta name="keywords" content="tedzvid bosna i hercegovina" />
 
-		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<!-- custom demo style -->
@@ -19,7 +18,6 @@
 	<body>
 		<div class="container">
 			<div class="bb-custom-wrapper">
-
 				<div id="bb-bookblock" class="bb-bookblock">
 					<div class="bb-item">
 						<div class="bb-custom-firstpage">
@@ -79,22 +77,25 @@ Kada prije zamjenice (hu)  هُ  dođe kratki vokal: (e) ـَ ,(i)  ـِ ,(u) ـ
 
 				<div class="lesson-list">
 					<div class="lesson-list-inner">
-						<div class="lesson"onclick="Page.goTo(1)">
+						<div class="logo">
+							LEKCIJE
+						</div>				
+						<div class="first lesson"onclick="goTo(2)">
 								1. DAMIR
 						</div>
-						<div class="lesson" onclick="Page.goTo(2)">
+						<div class="lesson" onclick="goTo(3)">
 								2. LAFZATULLAH
 						</div>
-						<div class="lesson" onclick="Page.goTo(3)">
+						<div class="lesson" onclick="goTo(4)">
 								3. IDGAM MISLEJN
 						</div>
-						<div class="lesson" onclick="Page.goTo(4)">
+						<div class="lesson" onclick="goTo(5)">
 								4. IDGAM MISLEJN MEAL-GUNNEH
 						</div>
-						<div class="lesson" onclick="Page.goTo(5)">
+						<div class="lesson" onclick="goTo(6)">
 								5. IDGAM MEAL-GUNNEH
 						</div>
-						<div class="lesson" onclick="Page.goTo(6)">
+						<div class="lesson" onclick="goTo(7)">
 								1. DAMIR
 						</div>
 						<div class="lesson">
@@ -115,95 +116,13 @@ Kada prije zamjenice (hu)  هُ  dođe kratki vokal: (e) ـَ ,(i)  ـِ ,(u) ـ
 			</div>
 
 		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
-		<script>
-			var Page = (function() {
-				
-				var goTo = function(p) {
-					alert('AAA')
-				};
-
-				var config = {
-						$bookBlock : $( '#bb-bookblock' ),
-						$navNext : $( '#bb-nav-next' ),
-						$navPrev : $( '#bb-nav-prev' ),
-						$navFirst : $( '#bb-nav-first' ),
-						$navLast : $( '#bb-nav-last' )
-					},
-					init = function() {
-						config.$bookBlock.bookblock( {
-							speed : 1000,
-							shadowSides : 0.8,
-							shadowFlip : 0.4
-						} );
-						initEvents();
-					},
-					initEvents = function() {
-
-						var $slides = config.$bookBlock.children();
-
-						// add navigation events
-						config.$navNext.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'next' );
-							return false;
-						} );
-
-						config.$navPrev.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'prev' );
-							return false;
-						} );
-
-						config.$navFirst.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'first' );
-							return false;
-						} );
-
-						config.$navLast.on( 'click touchstart', function() {
-							config.$bookBlock.bookblock( 'last' );
-							return false;
-						} );
-
-						// add swipe events
-						$slides.on( {
-							'swipeleft' : function( event ) {
-								config.$bookBlock.bookblock( 'next' );
-								return false;
-							},
-							'swiperight' : function( event ) {
-								config.$bookBlock.bookblock( 'prev' );
-								return false;
-							}
-						} );
-
-						// add keyboard events
-						$( document ).keydown( function(e) {
-							var keyCode = e.keyCode || e.which,
-								arrow = {
-									left : 37,
-									up : 38,
-									right : 39,
-									down : 40
-								};
-
-							switch (keyCode) {
-								case arrow.left:
-									config.$bookBlock.bookblock( 'prev' );
-									break;
-								case arrow.right:
-									config.$bookBlock.bookblock( 'next' );
-									break;
-							}
-						} );
-					};
-
-					return { init : init };
-
-			})();
-		</script>
-		<script>
-				Page.init();
-		</script>
+		<script src="js/app.js"></script>
+		
+		<script>Page.init();</script>
 	</body>
 </html>
