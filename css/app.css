@@ -4,7 +4,7 @@
 }
 
 .container {
-  background: gainsboro;
+  background: #f3f3f3;
 }
 
 .bb-custom-wrapper {
@@ -13,10 +13,11 @@
 
 .bb-custom-wrapper .bb-bookblock {
   display: inline-block;
-  height: 100%;
-  width: 90%;
   float: right;
+  height: 100%;
   overflow-y: auto;
+  padding-top: 10px;
+  width: 90%;
 }
 
 .bb-custom-wrapper > nav {
@@ -29,19 +30,20 @@
 }
 
 .logo {
+  background: #368036;
   color: #fff;
   display: inline-block;
   float: left;
-  padding-top: 40px;
-  position: fixed;  
+  font-size: 1.1em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 25px 0;
   text-align: center;
-  width: 10%;
+  width: 100%;
 }
 
 .lesson-list {
-  background: #1D976C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #5aa25a;
   display: inline-block;
   height: 100%;
   overflow-x: scroll;
@@ -59,7 +61,6 @@
 .-lessons {
   display: inline-block;
   float: left;
-  margin-top: 80px;  
   width: 100%;
 }
 
@@ -67,26 +68,27 @@
 }
 
 .lesson-list .lesson {
-  background: rgba(255, 255, 255, 0.75);
-  color: #7b847b;
+  border-bottom: 1px solid #3e823e;
+  color: #ffffff;
   float: left;
-  font-size: 14px;
-  padding: 10px 20px;
+  font-size: 15px;
+  font-size: 1em;
+  font-weight: 200;
+  padding: 13px 10px;
   width: 100%;
 }
 
 .lesson-list .lesson:hover {
   cursor: pointer;
-  background: #fff;
+  background: #3e823e;
 }
 
 .page {
   background: #fff;
   border-radius: 2px;
+  box-shadow: 2px 4px 4px #eaeaea;
   height: 95%;  
-  margin-top: 15px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 30px auto 0 auto;
   padding: 20px;
   width: 97%;
 }
