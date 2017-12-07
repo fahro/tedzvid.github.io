@@ -1,3 +1,6 @@
+.separator {
+  padding: 10px;
+}
 
 .dir_rtl {
   direction: rtl;
