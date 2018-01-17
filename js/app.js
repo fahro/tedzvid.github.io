@@ -4,7 +4,7 @@ var goTo = function (p) {
         .scrollIntoView({behavior: 'smooth'});
 };
 
-var setLessons = function () {
+var setLessons = function (options) {
     var lessons = [
         {
             i: 1,
@@ -294,11 +294,35 @@ var setLessons = function () {
                 </div>
             </div>
             `
+        }, {
+            i: 11,
+            name: "IHFA ŠEFEVIJJ"
+        }, {
+            i: 12,
+            name: "KALKALA"
+        }, {
+            i: 13,
+            name: "HUKMURRA"
+        }, {
+            i: 14,
+            name: "IDGAM MUTEDŽANISEJN"
+        }, {
+            i: 15,
+            name: "IDGAM MUTEKARIBEJN"
+        }, {
+            i: 16,
+            name: "SEKTA"
+        }, {
+            i: 17,
+            name: "ZNAKOVI ZA STAJANJE"
+        }, {
+            i: 18,
+            name: "MEDD – DUŽINE"
         }
     ];
 
-    setLessonsMenu(lessons);
-    setLessonsContent(lessons);
+    if(options.menu) setLessonsMenu(lessons);
+    if(options.content) setLessonsContent(lessons);
 };
 
 var setLessonsMenu = function (ls) {

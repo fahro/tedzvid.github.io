@@ -1,0 +1,72 @@
+.container {
+    background: #f3f3f3;
+  }
+  
+  .logo {
+    background: #368036;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .lesson-list {
+    background: #5aa25a;
+    display: inline-block;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 10%;
+  }
+  
+  .lesson-list-inner {
+    display: inline-block;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .-lessons {
+    display: inline-block;
+    float: left;
+    width: 100%;
+  }
+  
+  .lesson-list .lesson {
+    border-bottom: 1px solid #3e823e;
+    color: #ffffff;
+    float: left;
+    font-size: 15px;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 13px 10px;
+    width: 100%;
+  }
+  
+  .lesson-list .lesson:hover {
+    cursor: pointer;
+    background: #3e823e;
+  }
+  
+  .content {
+    display: inline-block;
+    height: 100%;
+    overflow-y: auto;
+    padding: 4em;
+    width: 89%;
+  }
+  
+  .page {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 2px 4px 4px #eaeaea;
+    min-height: 100%;  
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    width: 97%;
+  }
