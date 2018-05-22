@@ -1,0 +1,40 @@
+.navbar {
+    display: block;
+    position: relative;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    z-index: 7;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar > div {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.navbar .menu {
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar .menu > .menu-item {
+    width: 253px;
+    float: left;
+}
+
+.navbar .menu > .menu-item a {
+    display: block;
+    height: 74px;
+    color: #000 !important;
+}
+
+.navbar .menu > .menu-item a > span {
+    position: absolute;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.navbar .menu > .menu-item a > img {
+    height: 74px;
+}

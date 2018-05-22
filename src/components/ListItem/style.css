@@ -1,0 +1,120 @@
+.items .item {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    float: left;
+}
+
+.items .item .row {
+    padding: 0;
+    border: 0;
+    color: #5F5F5F;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 16px;
+    display: block;
+}
+
+.items .item .row .box {
+    display: table;
+    width: 100%;
+    height: 86px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    table-layout: fixed;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #E6E7E9;
+}
+
+.item .row .box .img-box {
+    display: table-cell;
+    width: 103px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.item .row .box img {
+    display: block;
+    width: 86px;
+    height: 86px;
+}
+
+.item .row .box .info-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item .row .box .info-box .title {
+    display: block;
+    max-height: 40px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.item .row .box .info-box .title a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #05a840;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item .row .box .button-box {
+    display: table-cell;
+    width: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.item .row .box .button-box button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 16px;
+}
+.item .row .box .button-box button:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    vertical-align: middle;
+    background: transparent url(../../images/icon-list.svg) no-repeat 2px -332px;
+    background-size: 32px 468px;
+}
+
+.item .row .box .button-box button.audio:before {
+    width: 23px;
+    height: 18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-position: 0 -354px;
+}
+
+.item .row .box .button-box button.details:before {
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-position: 0 -408px;
+}
