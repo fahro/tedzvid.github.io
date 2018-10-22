@@ -1,5 +1,6 @@
 import React from 'react';
+import lecture from '../../../images/lectures/LAFZATULLAH.jpg'
 
 export const Laftzatullah = () => (
-  <div>Laftzatullah content</div>
+  <div> <img  src={lecture} style={{ maxWidth:"100%",maxHeight:"100%"}}  alt="lekcija"/> </div>
 );
