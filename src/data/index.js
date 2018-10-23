@@ -4,19 +4,23 @@ import * as TAJWEED from '../components/Tajweed';
 const data = [
   {
     name: "DAMIR - izgovaranje zamjenice HU  هُ",
-    details: <TAJWEED.Damir/>
+    lecture: <TAJWEED.Damir/>,
+    tutorial: <TAJWEED.Damir/>,
   },
   {
     name: "LAFZATULLAH - izgovaranje riječi Allah اَللهُ",
-    details: <TAJWEED.Laftzatullah/>
+    lecture: <TAJWEED.Laftzatullah_Lecture/>,
+    tutorial:<TAJWEED.Laftzatullah_Tutorial/>,
   },
   {
     name: "IDGAM MISLEJN - uklapanje istih harfova",
-    details: <TAJWEED.Laftzatullah/>
+    lecture: <TAJWEED.Laftzatullah_Lecture/>,
+    tutorial: <TAJWEED.Laftzatullah_Lecture/>
   },
   {
     name: "IDGAM MISLEJN MEAL-GUNNEH-uklapanje istih harfova",
-    details: <TAJWEED.Laftzatullah/>
+    lecture: <TAJWEED.Laftzatullah_Tutorial/>,
+    tutorial: <TAJWEED.Laftzatullah_Tutorial/>,
   }
 ];
 

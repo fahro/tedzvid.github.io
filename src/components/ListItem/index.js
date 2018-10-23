@@ -12,14 +12,14 @@ export default ({item, detailsClick}) => (
                 </div>
                 <div className="info-box">
                     <div className="title">
-                        <a href="#" onClick={() => detailsClick(item)}>{item.name}</a>
+                        <a href="#" onClick={() => detailsClick(item,true)}>{item.name}</a>
                     </div>
                 </div>
                 <div className="button-box">
                     <button className="audio"/>
                 </div>
                 <div className="button-box">
-                    <button className="details" onClick={() => detailsClick(item)}/>
+                    <button className="details" onClick={() => detailsClick(item,false)}/>
                 </div>
             </div>
         </div>

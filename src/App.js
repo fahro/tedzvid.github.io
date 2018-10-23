@@ -15,7 +15,8 @@ class App extends Component {
             data: DATA,
             modal: {
                 visible: false,
-                item: {}
+                item: {},
+                isLecture:true,
             }
         };
 
@@ -25,14 +26,17 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.show(DATA[0]);
+        this.show(DATA[0],true);
     }
 
-    show(item) {
+    show(item,isLecture) {
+        console.log("ISLECTURE SHOW",isLecture)
+        console.log("SHOW ITEM",item)
         this.setState({
             modal: {
                 visible: true,
-                item
+                item,
+                isLecture:isLecture,
             }
         });
     }
@@ -40,8 +44,9 @@ class App extends Component {
     hide() {
         this.setState({
             modal: {
+                isLecture:this.state.modal.isLecture,
                 visible: false,
-                item: {}
+                item: {},
             }
         });
     }
@@ -76,6 +81,7 @@ class App extends Component {
                     visible={modal.visible}
                     item={modal.item}
                     onClose={this.hide}
+                    isLecture={modal.isLecture}
                 />
             </div>
         );

@@ -8,11 +8,12 @@ class Details extends React.Component {
     }
 
     render() {
-        const {visible, item, onClose} = this.props;
+        const {visible, item, onClose,isLecture} = this.props;
         return (
-            <Rodal visible={visible} onClose={onClose} width={1000} height={600} className="details">
+            <Rodal  visible={visible} onClose={onClose} width={1000} height={600} className="details">
                 <div>
-                  {item.details}
+                    {console.log("ISLECTURE:::",isLecture)}
+                  {isLecture?item.lecture:item.tutorial}
                 </div>
             </Rodal>
         )
