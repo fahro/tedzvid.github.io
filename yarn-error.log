@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /home/fahro/.rbenv/plugins/ruby-build/bin:/home/fahro/.rbenv/shims:/home/fahro/.rbenv/bin:/home/fahro/anaconda3/bin:/home/fahro/.rbenv/plugins/ruby-build/bin:/home/fahro/.rbenv/shims:/home/fahro/.rbenv/bin:/home/fahro/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.6.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "tedzvid",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^16.3.1",
+      "react-dom": "^16.3.1",
+      "react-scripts": "1.1.4",
+      "rodal": "^1.6.3"
+    },
+    "scripts": {
+      "start": "node server",
+      "heroku-postbuild": "npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c node server
+  Directory: /home/fahro/Documents/Projects/Tedzvid-react/tedzvid.github.io
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:127:13)
+      at maybeClose (internal/child_process.js:933:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
