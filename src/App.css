@@ -6,22 +6,16 @@
     url("./fonts/Hamdullah.ttf",format('ttf'));
 }
 
-/* Border box declaration 
-/ */
-html {
-    box-sizing: border-box;
-  }
-  /* inherit border-box on all elements in the universe and before and after
-   */
-  *, 
-  *:before, 
-  *:after {
-    box-sizing: inherit;
-  }
-  
 
 html{
     font-family: 'Hamdullah',sans-serif;
+}
+
+img{
+    object-fit: scale-down;
+    height: 100%;
+    width: 100%;
+
 }
 
 .wrapper {

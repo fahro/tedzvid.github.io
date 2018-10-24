@@ -16,10 +16,10 @@ export default ({item, detailsClick}) => (
                     </div>
                 </div>
                 <div className="button-box">
-                    <button className="audio"/>
+                    <button type="button"  onClick={() => detailsClick(item,false)} >Vjezba</button>
                 </div>
                 <div className="button-box">
-                    <button className="details" onClick={() => detailsClick(item,false)}/>
+                    <button type="button"  onClick={() => detailsClick(item,true)} >Lekcija</button>
                 </div>
             </div>
         </div>
