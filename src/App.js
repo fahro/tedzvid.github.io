@@ -26,12 +26,11 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.show(DATA[0],true);
+        //this.show(DATA[0],true);
+        document.title = "Tedzvid"
     }
 
     show(item,isLecture) {
-        console.log("ISLECTURE SHOW",isLecture)
-        console.log("SHOW ITEM",item)
         this.setState({
             modal: {
                 visible: true,
