@@ -1,7 +1,7 @@
 
 import React from 'react';
-import lecture from '../../../images/lectures/damir_lekcija.png'
+import lecture from '../../../images/tutorials/ihfa_sefevijj_vjezba.png'
 
-export const Damir_Lekcija= () => (
+export const Ihfa_Sefevijj_Vjezba= () => (
     <div style={{height:"100%",width:"100%"}}> <img  src={lecture} alt="lekcija"/> </div>
     );
