@@ -5,7 +5,7 @@ import Header from './components/Header';
 import ListItem from './components/ListItem';
 import Details from './components/Details';
 import DATA from './data';
-
+import soundfile from './sounds/vakf/3 sevaaun.wav';
 
 class App extends Component {
     constructor(props) {
@@ -17,7 +17,9 @@ class App extends Component {
                 visible: false,
                 item: {},
                 isLecture:true,
-            }
+              
+            },
+            zvuk_putanja:soundfile,
         };
 
         this.show = this.show.bind(this);
@@ -56,11 +58,13 @@ class App extends Component {
         const data = DATA.filter(item => item.name.toLowerCase().includes(value.toLowerCase())) ;
         this.setState({data});
     }
-
+    
     render() {
         const {data, modal} = this.state;
         return (
             <div>
+   
+             <audio id="myAudio" ref={(zvuk) => { this.zvuk = zvuk; }} src={this.state.zvuk_putanja}></audio>
                 <Header/>
 
                 <div className="wrapper">

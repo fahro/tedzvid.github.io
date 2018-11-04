@@ -7,7 +7,7 @@
   
      {    
      name: "VAKF - stajanje prilikom učenja",
-    lecture: <TAJWEED.Vakf_Lekcija/>,
+    lecture: <TAJWEED.Vakf_Lekcija changeSoundPath={this.changeSoundPath}/>,
     tutorial: <TAJWEED.Vakf_Vjezba/>,
   },
     

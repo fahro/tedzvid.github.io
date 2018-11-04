@@ -10,7 +10,7 @@ class Details extends React.Component {
     render() {
         const {visible, item, onClose,isLecture} = this.props;
         return (
-            <Rodal  visible={visible} onClose={onClose} width={800} height={550} className="details">
+            <Rodal id="myModal" visible={visible} onClose={onClose} width={''} height={''} className="details">
                 <div style={{height:"100%",width:"100%"}}>
                   {isLecture?item.lecture:item.tutorial}
                 </div>

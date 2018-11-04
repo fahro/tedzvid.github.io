@@ -1,8 +1,10 @@
 .rodal-dialog {
-  height: 500px;
+  height: 90%;
+  width: 60%;
 }
 
 .details .title{
+    position: absolute;
     margin: 0 auto;
     padding: 20px 0;
     font-weight: 500;
