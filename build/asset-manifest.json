@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.f346e895.css",
-  "main.css.map": "static/css/main.f346e895.css.map",
-  "main.js": "static/js/main.ea8a0503.js",
-  "main.js.map": "static/js/main.ea8a0503.js.map",
+  "main.css": "static/css/main.b91c7c6b.css",
+  "main.css.map": "static/css/main.b91c7c6b.css.map",
+  "main.js": "static/js/main.5e755fd0.js",
+  "main.js.map": "static/js/main.5e755fd0.js.map",
   "static/media/1 ma haleka.wav": "static/media/1 ma haleka.3327dcfe.wav",
   "static/media/10 aamenna.wav": "static/media/10 aamenna.213d3030.wav",
   "static/media/11 diinii.wav": "static/media/11 diinii.a39f4273.wav",
@@ -67,5 +67,7 @@
   "static/media/search-icon.svg": "static/media/search-icon.71c3153a.svg",
   "static/media/tajweed.png": "static/media/tajweed.6bfb5058.png",
   "static/media/vakf_lekcija.png": "static/media/vakf_lekcija.eb87964a.png",
-  "static/media/vakf_vjezba.png": "static/media/vakf_vjezba.2fd88b9a.png"
+  "static/media/vakf_tabela.png": "static/media/vakf_tabela.fcd3e29b.png",
+  "static/media/vakf_vjezba.png": "static/media/vakf_vjezba.2fd88b9a.png",
+  "static/media/vakf_znakovi_za_stajanje.png": "static/media/vakf_znakovi_za_stajanje.71348077.png"
 }

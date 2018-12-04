@@ -4,8 +4,14 @@ export * from './Vakf_Lekcija'
     
 
 export * from './Vakf_Vjezba'
+        
+
+export * from './Vakf_Znakovi'
+
+
+export * from './Vakf_Tabela'
     
-    
+
 export * from './Damir_Lekcija'
     
 

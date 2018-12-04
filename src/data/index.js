@@ -9,6 +9,8 @@
      name: "VAKF - stajanje prilikom učenja",
     lecture: <TAJWEED.Vakf_Lekcija changeSoundPath={this.changeSoundPath}/>,
     tutorial: <TAJWEED.Vakf_Vjezba/>,
+    znakovi: <TAJWEED.Vakf_Znakovi/>,
+    tabela: <TAJWEED.Vakf_Tabela/>,
   },
     
      {    
